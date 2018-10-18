@@ -1,0 +1,19 @@
+<resources>
+    <!-- detail -->
+    <dimen name="detail_title_text_size">28sp</dimen>
+    <dimen name="detail_body_text_size">18sp</dimen>
+    <item name="detail_body_line_spacing_multiplier" format="float" type="fraction">1.25</item>
+
+    <dimen name="fab_elevation">6dp</dimen>
+    <dimen name="fab_press_translation_z">12dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="fab_width">56dp</dimen>
+    <dimen name="fab_height">56dp</dimen>
+
+    <dimen name="cardview_bottom">8dp</dimen>
+    <dimen name="cardview_top">8dp</dimen>
+    <dimen name="cardview_left">16dp</dimen>
+    <dimen name="cardview_right">16dp</dimen>
+
+
+</resources>
