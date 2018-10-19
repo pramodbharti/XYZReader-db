@@ -14,6 +14,7 @@
     <dimen name="cardview_top">8dp</dimen>
     <dimen name="cardview_left">16dp</dimen>
     <dimen name="cardview_right">16dp</dimen>
+    <dimen name="photo_dimen">192dp</dimen>
 
 
 </resources>
