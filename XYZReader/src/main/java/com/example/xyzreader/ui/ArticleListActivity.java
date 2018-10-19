@@ -43,7 +43,6 @@ public class ArticleListActivity extends AppCompatActivity implements
         LoaderManager.LoaderCallbacks<Cursor> {
 
     private static final String TAG = ArticleListActivity.class.toString();
-    private Toolbar mToolbar;
     private SwipeRefreshLayout mSwipeRefreshLayout;
     private RecyclerView mRecyclerView;
 
@@ -58,8 +57,8 @@ public class ArticleListActivity extends AppCompatActivity implements
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_article_list);
 
-
-        //final View toolbarContainerView = findViewById(R.id.toolbar_container);
+        Toolbar myToolbar = (Toolbar) findViewById(R.id.toolbar_main);
+        setSupportActionBar(myToolbar);
 
         mSwipeRefreshLayout = (SwipeRefreshLayout) findViewById(R.id.swipe_refresh_layout);
         mSwipeRefreshLayout.setColorSchemeColors(
@@ -152,9 +151,6 @@ public class ArticleListActivity extends AppCompatActivity implements
             view.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
-                    //ActivityOptionsCompat optionsCompat = ActivityOptionsCompat
-                      //      .makeSceneTransitionAnimation(ArticleListActivity.this,vh.thumbnailView,
-                        //    ViewCompat.getTransitionName(vh.thumbnailView));
                     startActivity(new Intent(Intent.ACTION_VIEW,
                             ItemsContract.Items.buildItemUri(getItemId(vh.getAdapterPosition()))));
                 }

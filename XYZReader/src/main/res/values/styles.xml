@@ -24,6 +24,11 @@
         <!--<item name="android:windowContentTransitions">true</item>-->
     </style>
 
+    <style name="AppTheme.TransparentTheme">
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+    </style>
+
     <style name="CardTextViewStyle" parent="Theme.AppCompat">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
