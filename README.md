@@ -13,7 +13,8 @@ This repo stores improved version of [XYZReader](https://github.com/udacity/xyz-
 # About the code
 
 * Code is written in java
-* Picasso for image loading 
+* Volley library for networking
+* OkHttp for HTTP request
 * Design support library
 * ...
 
